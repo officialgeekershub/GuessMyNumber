@@ -32,7 +32,7 @@ const GameScreen = ({userNumber, onGameOver}) => {
   const initialGuess = generateRandomBetween(1, 100, userNumber);
   const [currentGuess, setCurrentGuess] = useState(initialGuess);
   const [guessRounds, setGuessRounds] = useState([initialGuess]);
-  const {width, height} = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
 
   useEffect(() => {
     if (currentGuess === userNumber) {
@@ -97,7 +97,7 @@ const GameScreen = ({userNumber, onGameOver}) => {
     </>
   );
 
-  if (width > 100) {
+  if (width > 500) {
     content = (
       <>
         <View style={styles.buttonContainerWide}>
