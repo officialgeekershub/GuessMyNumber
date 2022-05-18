@@ -97,7 +97,7 @@ const GameScreen = ({userNumber, onGameOver}) => {
     </>
   );
 
-  if (width > 100) {
+  if (width > 500) {
     content = (
       <>
         <View style={styles.buttonContainerWide}>
